@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "timestamp": "2026-11-25T12:50:27.518Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:54:27.516Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:58:32.274Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:58:32.723Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:58:33.218Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:58:33.732Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:58:34.238Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:58:34.752Z",
+    "temperature": 4.36,
+    "humidity": 88
+  },
+  {
+    "timestamp": "2026-11-25T12:58:35.267Z",
+    "temperature": 4.36,
+    "humidity": 88
+  }
+]

@@ -1,6 +1,7 @@
 const axios = require("axios");
+const fs = require("node:fs");
 
-async function collectWeather() {
+async function parsing() {
   const response = await axios.get(
     "https://api.openweathermap.org/data/2.5/weather",
     {
@@ -19,7 +20,14 @@ async function collectWeather() {
     humidity: response.data.main.humidity,
   };
 
-  console.log(record);
+  const fileContent = fs.readFileSync("weather.json", "utf8");
+  const records = JSON.parse(fileContent);
+
+  records.push(record);
+
+  fs.writeFileSync("weather.json", JSON.stringify(records, null, 2));
+
+  console.log("& Weather data collected &");
 }
 
-collectWeather().catch((error) => console.error(error.message));
+parsing().catch((error) => console.error(error.massage));

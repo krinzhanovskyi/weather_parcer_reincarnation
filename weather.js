@@ -13,8 +13,13 @@ async function collectWeather() {
     },
   );
 
-  console.log(response.data.main.temp);
-  console.log(response.data.main.humidity);
+  const record = {
+    timestamp: new Date().toISOString(),
+    temperature: response.data.main.temp,
+    humidity: response.data.main.humidity,
+  };
+
+  console.log(record);
 }
 
 collectWeather().catch((error) => console.error(error.message));

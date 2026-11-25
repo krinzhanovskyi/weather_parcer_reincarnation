@@ -30,4 +30,9 @@ async function parsing() {
   console.log("& Weather data collected &");
 }
 
-parsing().catch((error) => console.error(error.massage));
+function startparsing() {
+  parsing().catch((error) => console.error(error.massage));
+}
+
+startparsing();
+setInterval(startparsing, 60 * 60 * 1000);

@@ -1,0 +1,24 @@
+{
+  "name": "node_wetter_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krinzhanovskyi/weather_parcer_reincarnation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/krinzhanovskyi/weather_parcer_reincarnation/issues"
+  },
+  "homepage": "https://github.com/krinzhanovskyi/weather_parcer_reincarnation#readme",
+  "dependencies": {
+    "axios": "^1.21.1"
+  }
+}

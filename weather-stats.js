@@ -7,9 +7,6 @@ function getYesterdayDate() {
   return date.toDateString();
 }
 
-let temperatureSum = 0;
-let humiditySum = 0;
-let count = 0;
 let yesterdayDate = getYesterdayDate();
 
 const yesterdayRecords = records.filter((record) => {
@@ -17,4 +14,23 @@ const yesterdayRecords = records.filter((record) => {
   return date === yesterdayDate;
 });
 
-console.log(yesterdayRecords);
+function calcAverage(records) {
+  const count = records.length;
+
+  if (count === 0) {
+    return null;
+  }
+
+  let temperatureSum = 0;
+  let humiditySum = 0;
+
+  for (const record of records) {
+    temperatureSum += record.temperature;
+    humiditySum += record.humidity;
+  }
+
+  return {
+    averageTemperature: temperatureSum / count,
+    averageHumidity: humiditySum / count,
+  };
+}

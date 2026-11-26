@@ -40,7 +40,7 @@ The script sends requests to OpenWeatherMap for coordinates `47.3769, 8.5417` us
 Each successful reading is appended to the `weather.json` array:
 
 ```json
-[ 
+[
   {
     "timestamp": "2026-11-26T07:21:39.168Z",
     "temperature": 0.4,
@@ -79,10 +79,12 @@ Request and file-reading errors are printed to the console. If a network request
 
 ## Project Structure
 
-- `weather.js` — collects data from OpenWeatherMap and writes it to JSON;
-- `weather-stats.js` — calculates average readings for yesterday;
-- `weather.json` — accumulated weather readings;
-- `package.json` — the `axios` dependency and project metadata.
+├── `weather.js` — collects data from OpenWeatherMap and writes it to JSON.
+├── `weather-stats.js` — calculates average readings for yesterday.
+├── `weather.json` — accumulated weather readings.
+├── `README.md` — project documentation; including setup and usage instructions.
+├── `LICENSE` - project MIT license.
+└── `package.json` — the `axios` dependency and project metadata.
 
 The project does not currently include automated tests or npm launch commands.
 

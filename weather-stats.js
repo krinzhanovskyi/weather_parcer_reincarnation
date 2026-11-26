@@ -34,3 +34,17 @@ function calcAverage(records) {
     averageHumidity: humiditySum / count,
   };
 }
+
+let averages = calcAverage(yesterdayRecords);
+
+if (averages === null) {
+  console.log("Nichts gibts.");
+} else {
+  console.log(
+    `Durchschnittstemperatur: ${averages.averageTemperature.toFixed(2)} °C`,
+  );
+  console.log(
+    `Durchschnittliche Luftfeuchtigkeit: ${averages.averageHumidity.toFixed(2)} %`,
+  );
+  console.log("Datum:", yesterdayDate);
+}
